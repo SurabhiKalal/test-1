@@ -1,0 +1,152 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+ :root{
+    --navbar-height:59px
+ }                      
+ 
+ #navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+ }
+ #navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  opacity: .4;
+ }
+ #logo{
+margin: 10px 34px;
+ }
+ #logo img{
+   margin: 3px 6px;
+   height: 59px;
+ }
+ #navbar ul{
+   display: flex;
+ }
+ #navbar ul li{
+   list-style: none; 
+   font-size: 1.3 rem;
+ }
+ #navbar ul li a{
+  color: white;
+   display: block;
+   padding: 3px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+ }
+ #navbar ul li a:hover{
+  color: white;
+  background-color: rgb(19, 17, 17);
+ }
+
+ #home{
+  display: flex;
+  height: 513px;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+ }
+ #home::before{
+  content: "";
+  background: url("snooker\ table.jpg") no-repeat center center /cover;
+  position: absolute;
+  height: 520px;
+  width: 100%;
+  z-index: -2;
+  opacity: .8;
+ }
+
+ #home h1{
+   color: white;
+   text-align: center;
+ }
+ #home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+#services{
+  justify-content: center;
+  margin: 34px;
+  display: flex;
+}
+#services .box{
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background: #dee7f3;
+}
+#services .box img{
+height: 150px;
+margin: auto;
+display: block;
+}
+#services .box p{
+font-family:  sans-serif;
+}
+#client-section{
+  height: 340px;
+  position: relative;
+}
+#client-section::before{
+  content:"" ;
+  position: absolute;
+  background: url('table1.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 340px;
+  z-index: -1;
+  opacity: .3;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item{
+  padding: 50px;
+  margin: 40px;
+}
+#clients img{
+  margin: 40px;
+  height:59px;
+}
+
+ .h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family:  serif;
+ }
+
+ .h-secondary{
+  font-size: 2.3rem;
+  padding: 12px;
+ }
+
+ .btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: grey;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+ }
+
+ .center{
+  text-align: center;
+ }
+
+ 
